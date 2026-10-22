@@ -57,7 +57,7 @@ section[data-testid="stSidebar"] { background: #DCE9ED; border-right: 1px solid 
   <span class="chip">KNN</span><span class="chip">Linear Regression</span><span class="chip o">Peringatan Dini</span><span class="chip o">Buffer Stock</span>
 </div>
 """, unsafe_allow_html=True)
-up = st.sidebar.file_uploader("Dataset (opsional)", type="xlsx")
+up = st.sidebar.file_uploader("Dataset", type="xlsx")
 try:
     D = load(up if up else FILE)
 except Exception as e:
